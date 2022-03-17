@@ -20,10 +20,14 @@ alias gl='git log --graph --oneline'
 alias gr='git reset'
 alias gs='git status'
 
-zstyle ':completion:*' matcher-list '' \
-	'm:{a-z\-}={A-Z\_}' \
-	'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
-	'r:|?=** m:{a-z\-}={A-Z\_}'
+autoload -U compinit
+compinit -i
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*' list-dirs-first true
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' menu select
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*' verbose false
 
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
