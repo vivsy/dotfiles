@@ -1,0 +1,20 @@
+[user]
+  name = Vivian Huang
+  email = vhuang13@gmail.com
+[core]
+  editor = code -rw
+  pager = delta --dark
+[alias]
+  praise = blame
+  unstash = stash pop
+  graph = log --all --graph --oneline
+  fixup = commit --amend --no-edit --reset-author
+[commit]
+  verbose = 1
+[status]
+  branch = true
+  short = true
+[interactive]
+  diffFilter = delta --color-only --dark
+[pull]
+  rebase = true
