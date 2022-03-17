@@ -3,7 +3,23 @@ export VISUAL='vim'
 export PAGER='less'
 export LESS='-g -i -M -R -S -w -z-4'
 
+setopt autocd
 setopt ignoreeof
+setopt interactivecomments
+setopt menucomplete
+setopt nobeep
+setopt rmstarsilent
+
+HISTSIZE=5000
+HISTFILE=~/.zsh_history
+SAVEHIST=5000
+
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt extended_history
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 alias -- '-'='cd -'
 alias ..='cd ..'
@@ -29,24 +45,8 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' squeeze-slashes true
 zstyle ':completion:*' verbose false
 
-HISTSIZE=5000
-HISTFILE=~/.zsh_history
-SAVEHIST=5000
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt extended_history
-setopt appendhistory
-setopt sharehistory
-setopt incappendhistory
-setopt autocd
-
 bindkey '^r' history-incremental-search-backward
 bindkey '^s' history-incremental-search-forward
-
-if [ ! -e "$HOME/.zplug" ]; then
-  echo "Auto-installing zplug"
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-fi
 
 . ~/.zplug/init.zsh
 
