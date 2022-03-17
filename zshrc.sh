@@ -11,6 +11,15 @@ alias e="$EDITOR"
 alias grep='grep --color=auto'
 alias ls='exa --group-directories-first'
 
+alias ga='git add'
+alias gb='git branch'
+alias gc='git commit'
+alias gd='git diff'
+alias gk='git checkout'
+alias gl='git log --graph --oneline'
+alias gr='git reset'
+alias gs='git status'
+
 zstyle ':completion:*' matcher-list '' \
 	'm:{a-z\-}={A-Z\_}' \
 	'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
