@@ -1,6 +1,6 @@
 # dotfiles
 
-Vivian Huang's dotfiles
+My dotfiles
 
 ## Install
 
