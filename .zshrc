@@ -49,7 +49,10 @@ zstyle ":completion:*" verbose false
 bindkey "^r" history-incremental-search-backward
 bindkey "^s" history-incremental-search-forward
 
-. ~/.zplug/init.zsh
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export ZPLUG_HOME="/opt/homebrew/opt/zplug"
+. $ZPLUG_HOME/init.zsh
 
 zplug "mafredri/zsh-async", from:github
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
