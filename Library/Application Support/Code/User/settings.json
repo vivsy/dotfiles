@@ -1,0 +1,93 @@
+{
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.autoIndent": "brackets",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.codeLens": false,
+  "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 1,
+  "editor.dragAndDrop": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontFamily": "Input",
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.quickSuggestionsDelay": 50,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "selection",
+  "editor.rulers": [80],
+  "editor.stickyTabStops": true,
+  "editor.suggest.localityBonus": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.useTabStops": true,
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "Cargo.lock": "toml",
+    "zshrc": "shellscript"
+  },
+  "files.autoSave": "afterDelay",
+  "files.eol": "\n",
+  "files.hotExit": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.enabled": false,
+  "prettier.proseWrap": "never",
+  "prettier.trailingComma": "all",
+  "search.useIgnoreFiles": false,
+  "telemetry.telemetryLevel": "error",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.persistentSessionScrollback": 0,
+  "terminal.integrated.scrollback": 5000,
+  "window.autoDetectColorScheme": true,
+  "window.restoreWindows": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "workbench.editor.languageDetection": false,
+  "workbench.editor.restoreViewState": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": null,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[diff]": {
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded"
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
