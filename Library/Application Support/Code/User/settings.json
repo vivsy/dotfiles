@@ -19,7 +19,7 @@
   "editor.quickSuggestionsDelay": 50,
   "editor.renderLineHighlight": "none",
   "editor.renderWhitespace": "selection",
-  "editor.rulers": [80],
+  "editor.rulers": [100],
   "editor.stickyTabStops": true,
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
@@ -44,8 +44,10 @@
   "prettier.proseWrap": "never",
   "prettier.trailingComma": "all",
   "search.useIgnoreFiles": false,
+  "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "error",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.persistentSessionScrollback": 0,
   "terminal.integrated.scrollback": 5000,
   "window.autoDetectColorScheme": true,
@@ -55,6 +57,7 @@
   "workbench.editor.languageDetection": false,
   "workbench.editor.restoreViewState": false,
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": null,
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
@@ -70,6 +73,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
