@@ -1,22 +1,38 @@
-export EDITOR="code"
+# third party
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+. "$HOME/.cargo/env"
+
+export ZPLUG_HOME="/opt/homebrew/opt/zplug"
+. "$ZPLUG_HOME/init.zsh"
+
+zplug "mafredri/zsh-async", from:github
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "zdharma/fast-syntax-highlighting", from:github
+
+if ! zplug check; then
+  zplug install
+fi
+
+zplug load
+
+# personal
 
 setopt autocd
 setopt ignoreeof
 setopt interactivecomments
 setopt menucomplete
 setopt nobeep
+setopt norcs
 setopt rmstarsilent
 
-HISTSIZE=5000
-HISTFILE=~/.zsh_history
-SAVEHIST=5000
-
-setopt hist_expire_dups_first
-setopt hist_ignore_dups
-setopt extended_history
-setopt appendhistory
-setopt sharehistory
-setopt incappendhistory
+export COPYFILE_DISABLE="1"
+export EDITOR="code"
+export HOMEBREW_NO_EMOJI="1"
+export HOMEBREW_NO_INSECURE_REDIRECT="1"
+export LS_COLORS="di=34"
+export WORDCHARS="._-~"
 
 alias -- "-"="cd -"
 alias ..="cd .."
@@ -35,6 +51,8 @@ alias gp="git push"
 alias gr="git reset"
 alias gs="git status"
 
+# autocomplete
+
 autoload -U compinit
 compinit -i
 zstyle ":completion:*" group-name ""
@@ -43,23 +61,3 @@ zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
 zstyle ":completion:*" menu select
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" verbose false
-
-bindkey "^r" history-incremental-search-backward
-bindkey "^s" history-incremental-search-forward
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-. "$HOME/.cargo/env"
-
-export ZPLUG_HOME="/opt/homebrew/opt/zplug"
-. "$ZPLUG_HOME/init.zsh"
-
-zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
-zplug "zdharma/fast-syntax-highlighting", from:github
-
-if ! zplug check; then
-  zplug install
-fi
-
-zplug load
