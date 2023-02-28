@@ -51,6 +51,8 @@ bindkey "^s" history-incremental-search-forward
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+. "$HOME/.cargo/env"
+
 export ZPLUG_HOME="/opt/homebrew/opt/zplug"
 . "$ZPLUG_HOME/init.zsh"
 
