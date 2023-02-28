@@ -1,6 +1,4 @@
 export EDITOR="code"
-export PAGER="less"
-export LESS="-g -i -M -R -S -w -z-4"
 
 setopt autocd
 setopt ignoreeof
