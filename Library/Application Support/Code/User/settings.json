@@ -50,6 +50,7 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.persistentSessionScrollback": 0,
   "terminal.integrated.scrollback": 5000,
+  "update.showReleaseNotes": false,
   "window.autoDetectColorScheme": true,
   "window.restoreWindows": "none",
   "workbench.editor.enablePreview": false,
