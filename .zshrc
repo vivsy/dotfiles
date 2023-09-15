@@ -12,10 +12,18 @@ setopt nobeep
 setopt norcs
 setopt rmstarsilent
 
+export ZLE_SPACE_SUFFIX_CHARS=$'&|'
+if [ -z "${SSH_TTY+1}" ]; then
+  PS1=$'%{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+else
+  PS1=$'%{\e[33m%}[%m]%{\e[0m%} %{\e[90m%}%2~%{\e[0m%} %{\e[%(?.32.31)m%}%(!.#.$)%{\e[0m%} '
+fi
+
 export COPYFILE_DISABLE="1"
 export EDITOR="code"
 export HOMEBREW_NO_EMOJI="1"
 export HOMEBREW_NO_INSECURE_REDIRECT="1"
+export PATH="$HOME/.local/bin:$PATH"
 export LS_COLORS="di=34"
 export WORDCHARS="._-~"
 
@@ -23,7 +31,7 @@ alias -- "-"="cd -"
 alias ..="cd .."
 alias e="$EDITOR"
 alias grep="grep --color=auto"
-alias ls="exa --group-directories-first"
+alias ls="ls -G"
 
 alias ga="git add"
 alias gb="git branch"
