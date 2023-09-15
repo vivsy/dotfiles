@@ -2,21 +2,6 @@
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-. "$HOME/.cargo/env"
-
-export ZPLUG_HOME="/opt/homebrew/opt/zplug"
-. "$ZPLUG_HOME/init.zsh"
-
-zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
-zplug "zdharma/fast-syntax-highlighting", from:github
-
-if ! zplug check; then
-  zplug install
-fi
-
-zplug load
-
 # personal
 
 setopt autocd
