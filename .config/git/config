@@ -9,8 +9,6 @@
 	editor = code -w
 [credential]
 	helper = osxkeychain
-[diff]
-	external = difft
 [fetch]
 	prune = true
 [init]
